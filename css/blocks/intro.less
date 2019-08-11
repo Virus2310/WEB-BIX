@@ -1,0 +1,54 @@
+//main: ../style.less
+
+.intro {
+    margin-top: 90px;
+
+    &__title {
+        color: @white;
+        .font-ralblack;
+        font-size: 62px;
+        font-weight: 900;
+    }
+
+    &__subtitle {
+        color: @blue;
+        .font-ralblack;
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    &__text {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 328px;
+        color: @white;
+        .font-ralsemibold;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+.intro-more__link {
+    display: inline-block;
+    color: @white;
+    .font-ralsemibold;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0 3px 3px 0;
+    background-color: @blue;
+    padding: 15px 20px;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: @white;
+    }
+}

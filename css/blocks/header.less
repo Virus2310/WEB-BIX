@@ -7,12 +7,7 @@
     background-size: cover;
     padding-top: 30px;
     position: relative;
-
-    height: 100vh;
-
-    &__inner {
-        // height: 100vh;
-    }
+    height: 95vh;
 
     &::before {
         content: '';
@@ -24,6 +19,20 @@
         background-color: rgba(20, 39, 41, .75); 
     }
 
+    // &::after{
+    //     content: url('images/mouse_blue.svg');
+    //     display: block;
+    //     // height: 49px;
+    //     // width: 44px;
+    //     position: absolute;
+    //     bottom: -10px;
+    //     left: 50%;
+    //     // background:  no-repeat;
+    //     // background-size: cover;
+    //     cursor: pointer;
+
+    // }
+
     .nav__link {
         color: @white;
         .font-ralsemibold;
@@ -31,7 +40,6 @@
         font-weight: 400;
         line-height: 19px;
         text-decoration: none;
-
         position: relative;
 
         &:after{
@@ -39,12 +47,10 @@
             width: 0;
             height: 1px;
             background-color: @blue;
-
             position: absolute;
             bottom: -6px;
             left: 0;
             z-index: 1;
-
             transition: width .3s linear;
 
         }
@@ -58,6 +64,24 @@
 
         
     }
+
+    @media (max-width: @screen-sm-max) {
+        .logo {
+            display: block;
+            text-align: center;
+        }
+
+        .nav {
+            padding-top: 90px;
+            
+            &__link {
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    
 }
 
 

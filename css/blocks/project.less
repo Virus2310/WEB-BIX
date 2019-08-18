@@ -1,0 +1,101 @@
+// main: ../style.less
+
+.project {
+
+   &__inner {
+      padding-top: 120px;
+   }
+}
+
+.project-wrap {
+   
+   
+   &__title {
+      color: @dark-gray;
+      .font-ralextrabold;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1px;
+      padding-bottom: 33px;
+   }
+
+   &__text {
+      color: @dark-gray;
+      .font-ralregular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      padding-bottom: 50px;
+   }
+}
+
+.project-block {
+   border-radius: 6px;
+   border: 1px solid @blue;
+   background-color: #f6f6f6;
+   padding: 25px 28px;
+   cursor: pointer;
+   transition: box-shadow .2s linear;
+
+   display: flex;
+   margin-top: 50px;
+
+   &:hover {
+      box-shadow: 0 4px 20px rgba(0, 106, 255, 0.815);
+      background: white;
+   }
+
+   &--red {
+      border-radius: 6px;
+      border: 1px solid red;
+      background-color: #f6f6f6;
+      padding: 25px 28px;
+
+      transition: box-shadow .2s linear;
+
+      &:hover {
+         box-shadow: 0 4px 20px rgba(255, 0, 0, 0.781);
+         background: white;
+      }
+   }
+}
+
+
+.project-content {
+   padding: 30px;
+
+   &__title {
+      color: #5c5c5c;
+      .font-ralextrabold;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 32px;
+   }
+
+   &__text {
+      color: @light-gray;
+      .font-ralregular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-bottom: 36px;
+   }
+
+   &__link {
+      border-radius: 15px;
+      border: 1px solid @blue;
+      background-color: @blue; color: #ffffff;
+      .font-ralextrabold;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 32px;
+      padding: 10px 24px;
+      transition: all .1s linear;
+      
+      &:hover {
+         background-color: darken(@blue, 20%);
+         color: #fff;
+         text-decoration: none;
+      }
+   }
+}

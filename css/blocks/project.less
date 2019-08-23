@@ -123,7 +123,7 @@
         display: inline-block;
         box-shadow: 0 4px 7px rgba(53, 110, 230, 0.75);
         border-radius: 30px;
-        background-color: #006cff;
+        background-color: @blue;
         color: #ffffff;
         .font-ralregular;
         font-size: 20px;
@@ -133,5 +133,13 @@
         padding: 15px 35px;
         margin-top: 50px;
         text-decoration: none;
+
+        transition: all .2s linear;
+
+        &:hover {
+            box-shadow: 0 5px 17px rgb(24, 48, 102);
+            background-color: darken(@blue, 30%);
+
+        }
     }
 }

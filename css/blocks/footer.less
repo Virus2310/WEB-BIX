@@ -1,0 +1,142 @@
+// main: ../style.less
+
+.footer {
+    background: @blue;
+    background-size: cover;
+
+    &-inner {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    
+    &-line {
+        height: 1px;
+        width: 100%;
+        background-color: #5b90ff;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: flex-end;
+        color: #ffffff;
+        .font-ralregular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        /* Text style for "C, opyrigh" */
+        letter-spacing: 0.28px;
+        padding: 15px 0;
+    }
+}
+
+.social-info {
+
+    img {
+        margin-bottom: 31px;
+    }
+
+    &__text {
+        color: @white;
+        .font-ralregular;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 31px;
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+
+    &__link {
+        padding-right: 16px;
+        
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.contact-info {
+
+    margin-top: -5px;
+
+
+    &__title {
+        margin-bottom: 40px;
+        color: #ffffff;
+        // .font-ralsemibold;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__street {
+        color: @white;
+        margin-bottom: 40px;
+        .font-ralregular;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__mail {
+
+        a {
+            color: @white;
+            text-decoration: none
+        }
+        color: @white;
+        .font-helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}
+
+.links-list {
+
+    &__title {
+        color: #ffffff;
+        // .font-ralsemibold;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 36px;
+    }
+}
+.nav-links {
+
+    a {
+        color: white;
+        display: block;
+        .font-helvetica;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+}
+
+
+.support-block {
+
+    &__title {
+        color: #ffffff;
+        // .font-ralsemibold;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 36px;
+    }
+}
+.support-links {
+     a {
+        color: white;
+        display: block;
+        .font-helvetica;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
+     }
+}
+
